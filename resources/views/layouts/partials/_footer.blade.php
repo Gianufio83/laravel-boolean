@@ -1,3 +1,4 @@
+ 
  </div>
       <nav class="nav-footer">
         <div class="container-fluid-top">
@@ -28,6 +29,15 @@
           </div>
         </div>
         <div class="container-fluid-bottom">
+          <div class="footer-bottom-icons">
+             <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="footer-bottom-text">
+            Boolean SRL - Piazzale Giovanni dalle Bande Nere, 9 - 20146, Milano - P.IVA: 10214930967
+          </div>
         </div>
       </nav>
   </body>
