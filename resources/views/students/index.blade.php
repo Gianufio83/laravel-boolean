@@ -1,4 +1,5 @@
 @extends('layouts.layout')
+
 @section('main-content')
 <section class="all-students">
   @foreach ($students as $student)

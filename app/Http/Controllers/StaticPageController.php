@@ -8,11 +8,14 @@ class StaticPageController extends Controller
 {
     public function index()
     {
+     return view('staticpages.home');
     }
     public function privacy()
     {
+     return view('staticpages.privacy');
     }
     public function faq()
     {
+     return view('staticpages.faq');
     }
 }
