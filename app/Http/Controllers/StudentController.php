@@ -16,13 +16,20 @@ class StudentController extends Controller
         $students = $this->students;
         return view('students.index', compact('students'));
     }
-    public function show($id)
+    public function show($slug)
     {
-        $student = $this->students[$id];
-        if (empty($student)) {
-            abort(404);
+        $find = false;
+        $thisStudent = [];
+        foreach ($this->students as $student) {
+            if ($student['slug'] == $slug) {
+                $find = true;
+                $thisStudent = $student;
+            }
+        }
+        if ($find) {
+            return view('students.show', ['student' => $thisStudent]);
         } else {
-            return view('students.show');
+            abort('404');
         }
     }
 }
