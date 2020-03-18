@@ -10,7 +10,7 @@
             {{$student['name']}}({{$student['eta']}})
           </h3>
           <span>
-            Assunt{{($student['genere'] == 'm') ? 'o' : 'a'}} da {{$student['azienda']}} 
+            Assunt{{($student['gender'] == 'm') ? 'o' : 'a'}} da {{$student['azienda']}} 
             come {{$student['ruolo']}}
           </span>
       </div>
@@ -20,6 +20,6 @@
       </a>
     </div>
   {{-- @endforeach --}}
-   <a href="{{route('student.index')}}">Go back</a>
+   <a href="{{route('student.index')}}">Torna indietro</a>
  </section>
 @endsection
