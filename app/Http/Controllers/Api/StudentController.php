@@ -21,6 +21,7 @@ class StudentController extends Controller
             if ($genderPost == 'all') {
                 $result['response'] = $students;
                 return response()->json($result);
+                
             } else {
                 foreach ($students as $key => $student) {
                     if ($student['gender'] == $genderPost) {
