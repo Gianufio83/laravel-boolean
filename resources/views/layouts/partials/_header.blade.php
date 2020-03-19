@@ -19,7 +19,7 @@
     </div>
     <div class="nav-right">
       <ul>
-        <li>
+        <li {{(Request::route()->getName() == 'static_page.home') ? 'active' : ''}}>
         <a href="{{route('static_page.home')}}">Home</a>
         </li>
         <li>

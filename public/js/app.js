@@ -29893,7 +29893,50 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // $(document).ready(function()
+// {
+//   $('#filter').change(function() 
+//   { 
+//     $.ajax(
+//       {
+//     'url': ',
+//     'data': {
+//       'gender': $(this).val()
+//     },
+//     'success': function(data) {
+//       console.log(data.response);
+//       if (data.response.lenght > 0) {
+//         console.log(data.response);
+//         }
+//         else {
+//           console.log('no students');
+//         }
+//     },
+//     'error' : function(){
+//       console.log('error');
+//     }
+//   });
+// });
+
+
+$(document).ready(function () {
+  $('#filter').change(function () {
+    $.ajax({
+      url: "window.location.protocol + '//' + window.location.host + 'api/students/genders",
+      data: {
+        gender: $(this).val()
+      },
+      success: function success(data) {
+        if (data.response.lenght > 0) {
+          console.log(data.response);
+        }
+      },
+      error: function error() {
+        console.log('error');
+      }
+    });
+  });
+});
 
 /***/ }),
 
@@ -29947,8 +29990,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Gianuario\Desktop\boolean\laravel-boolean\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Gianuario\Desktop\boolean\laravel-boolean\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Gianuario\desktop\boolean\laravel-boolean\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Gianuario\desktop\boolean\laravel-boolean\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
