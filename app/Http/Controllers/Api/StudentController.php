@@ -14,6 +14,7 @@ class StudentController extends Controller
         $students = config('students.students');
         $result = [
             'error' => '',
+            
             'response' => []
         ];
         if (in_array($data['gender'], $genders)) {

@@ -17,5 +17,7 @@ class StaticPageController extends Controller
     public function faq()
     {
      return view('staticpages.faq');
+
     }
+    
 }

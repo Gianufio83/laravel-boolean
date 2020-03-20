@@ -24,3 +24,6 @@ Route::get('/domande-frequenti', 'StaticPageController@faq')->name('static_page.
 // creaimo una rotta con il controller per gli studenti
 Route::get('/students', 'StudentController@index')->name('student.index');
 Route::get('/students/show/{slug}', 'StudentController@show')->name('student.show');
+
+// creaimo una rotta con il controller per i dati nel database
+Route::get('/database', 'DatabaseController@db')->name('database.db');
