@@ -11,18 +11,16 @@ class StudentController extends Controller
     {
         $data = $request->all();
         $genders = config('students.genders');
-        $students = config('students.students');
+        $students = config('students.allStudents');
         $result = [
             'error' => '',
-            
             'response' => []
         ];
         if (in_array($data['gender'], $genders)) {
             $genderPost = $data['gender'];
-            if ($genderPost == 'all') {
+            if ($data['gender'] == 'all') {
                 $result['response'] = $students;
                 return response()->json($result);
-                
             } else {
                 foreach ($students as $key => $student) {
                     if ($student['gender'] == $genderPost) {

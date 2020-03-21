@@ -40,10 +40,9 @@
           </div>
         </div>
       </nav>
-      @section('scripts')
-            <script src="{{asset('js/app.js')}}"></script>
-        @endsection
-  </body>
+      
+      <script src="{{asset('js/app.js')}}"></script>
+        </body>
 </html>
 
 
