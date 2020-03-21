@@ -18,7 +18,7 @@
           'azienda' => 'Prima assicurazioni',
           'ruolo' => 'junior software engineer',
           'descrizione' => 'A 24 anni, dopo aver conseguito il diploma linguistico ha deciso di intraprendere fin da subito un percorso nel mondo Tech. Ad oggi ricopre il ruolo di Junior Software Engineer.',
-          'gender' => 'm',
+          'gender' => 'f',
           'slug'=> 'Paola-Poggini'
         ],
         [
