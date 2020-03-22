@@ -19,4 +19,5 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::namespace('Api')->group(function () {
     Route::post('/students/genders', 'StudentController@gender');
+    Route::post('/students/filter', 'StudentController@filterAll');
 });
